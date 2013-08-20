@@ -11,20 +11,20 @@ jest to interaktywny kurs
 3
 00:00:04,680 --> 00:00:06,920
 uczący podstaw tworzenia
-aplikacji internetowych, przez
+aplikacji internetowych przez
 
 4
 00:00:06,920 --> 00:00:08,790
-przeglądarke, używając Ruby on Rails.
+przeglądarke używając Ruby on Rails.
 
 5
 00:00:08,790 --> 00:00:10,010
-Ale jest też dosadniejsza odpowiedź.
+Ale jest też dosadniejsza odpowiedÅº.
 
 6
 00:00:10,010 --> 00:00:12,160
 W świecie praktycznej nauki,
-możemy korzystać z książek
+możemy korzystać zarówno z książek
 
 7
 00:00:12,160 --> 00:00:14,360
@@ -37,12 +37,12 @@ interaktywny.
 
 9
 00:00:15,290 --> 00:00:17,120
-Ale chwila! Przecież to
-generacja Nintendo.
+Ale chwila! Przecież to jest
+generacja Nintendo!
 
 10
 00:00:17,120 --> 00:00:19,170
-Dajcie mi cholernego joystick'a.
+Dajcie mi tego cholernego joystick'a.
 
 11
 00:00:19,170 --> 00:00:21,220
@@ -61,8 +61,8 @@ znajdziesz sposób jak to popsuć
 
 14
 00:00:26,060 --> 00:00:27,910
-czasem nawet nie z
-Twojej winy.
+Czasem nawet nie z
+Twojej winy...
 
 15
 00:00:27,910 --> 00:00:29,900
@@ -103,12 +103,12 @@ mieć tęczowe pławiki albo
 
 23
 00:00:41,440 --> 00:00:44,660
-być uzbrojonym w może pistolety
+być uzbrojonym mo¿e w pistolety
 albo może nawet w shotgun'a/
 
 24
 00:00:44,660 --> 00:00:46,790
-O tak, szotgun'a.
+O tak, szczególnie szotgun'a.
 
 25
 00:00:46,790 --> 00:00:49,370
@@ -117,12 +117,12 @@ zapewne pytasz się
 
 26
 00:00:49,370 --> 00:00:51,070
-co to ma do Zombie?
+co to ma wspólnego z Zombie?
 
 27
 00:00:51,070 --> 00:00:53,350
-Coż, to jest moment kiedy
-prezentujemy naszą aplikacje.
+Coż, to jest moment dla naszej
+przyk³adowej aplikacji.
 
 28
 00:00:53,350 --> 00:00:56,070
@@ -131,12 +131,12 @@ przykładem dla początkujących.
 
 29
 00:00:56,070 --> 00:00:58,510
-Jak kolwiek, jest on oklepany, 
+Mimo to, jest on oklepany, 
 więc potrzebujemy
 
 30
 00:00:58,510 --> 00:00:59,810
-znaleźć coś nowego.
+znaleÅºć coś nowego.
 
 31
 00:00:59,810 --> 00:01:01,170
@@ -159,8 +159,8 @@ nieumarli.
 
 35
 00:01:06,960 --> 00:01:09,350
-Właściwie dzieje się to w
-całym kraju, i w Seatle
+Właściwie dzieje się na ca³ym
+œwiecie. Dla przyk³adu w Seatle
 
 36
 00:01:09,350 --> 00:01:12,220
@@ -203,7 +203,7 @@ Brzmi logicznie, prawda??
 
 44
 00:01:27,290 --> 00:01:28,980
-Więc jak to, zombie coś,
+Więc jak to coœ
 działa?
 
 45
@@ -262,7 +262,7 @@ aby przejść na poziom drugi.
 56
 00:01:50,150 --> 00:01:52,590
 W interfejsie zadań zobaczysz
-sume wszystkich punktów,
+sumê wszystkich punktów,
 
 57
 00:01:52,590 --> 00:01:55,020
@@ -304,7 +304,7 @@ pomogą Ci przejść dalej.
 65
 00:02:06,620 --> 00:02:08,220
 Kiedy już wpiszesz prawidłową
-odpowiedź, zobaczysz
+odpowiedÅº, zobaczysz
 
 66
 00:02:08,220 --> 00:02:10,289
@@ -348,7 +348,7 @@ slajdy z video-lekcji
 
 74
 00:02:24,370 --> 00:02:26,000
-do późniejszego wykorzystania.
+do póÅºniejszego wykorzystania.
 
 75
 00:02:26,000 --> 00:02:27,750
@@ -404,7 +404,7 @@ ich aplikacji.
 
 86
 00:02:49,630 --> 00:02:52,800
-Wystarczy gadania, nadszedł czas
+Koniec gadania! Nadszedł czas
 aby nauczyć się Rails for Zombies.
 
 87
