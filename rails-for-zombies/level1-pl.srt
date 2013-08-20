@@ -188,7 +188,7 @@ otrzymać hash
 
 40
 00:01:36,780 --> 00:01:38,030
-która wygląda jak to.
+który wygląda jak to.
 
 41
 00:01:40,550 --> 00:01:42,920
@@ -202,7 +202,7 @@ to tutaj jest małe podsumowanie.
 43
 00:01:44,430 --> 00:01:47,942
 Więc, jeśli wykonamy puts b[:status],
-otrzymamy spowrotem "I just
+otrzymamy z powrotem "I just
 
 44
 00:01:47,942 --> 00:01:49,430
@@ -216,7 +216,7 @@ to otrzymamy "Jim."
 46
 00:01:52,370 --> 00:01:54,470
 A jeśli wykonamy przykład z dołu,
-to otrzymamy spowrotem
+to otrzymamy z powrotem
 
 47
 00:01:54,470 --> 00:01:57,690
