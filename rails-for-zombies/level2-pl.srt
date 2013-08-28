@@ -311,108 +311,107 @@ napisana wraz z nową składnią.
 
 66
 00:03:08,830 --> 00:03:11,390
-Pora porazmawiać teraz, trochę
-o relacjach (relationships)
+Pora aby porazmawiać, trochę
+o relacjach (relationships),
 
 67
 00:03:11,390 --> 00:03:15,030
-because they always travel in
-packs and because, you know,
+ponieważ one zawsze wędrują w
+paczce i dlatego, no wiecie,
 
 68
 00:03:15,030 --> 00:03:17,420
-you need to have multiple tables
-and their relationships
+potrzebujemy mieć wiele tabel
+i ich relacje
 
 69
 00:03:17,420 --> 00:03:18,410
-with each other.
+między sobą.
 
 70
 00:03:18,410 --> 00:03:20,830
-So as you saw with our previous
-example, you might
+Wraz z poprzednim przykładem,
+mogłeś zauważyć, że
 
 71
 00:03:20,830 --> 00:03:24,720
-have noticed that the Zombie Ash
-had two different tweets,
+Zombie Ash miała 2 różne
+tweety i wymienaliśmy
 
 72
 00:03:24,720 --> 00:03:26,700
-and we were listing
-his name twice.
+jej imie 2 razy. 
 
 73
 00:03:26,700 --> 00:03:29,140
-That's obviously not
-very efficient.
+To oczywiście nie jest
+wydajne.
 
 74
 00:03:29,140 --> 00:03:31,760
-Well, what we're going to do
-here is break that out into a
+To co zamierzamy zrobić tutaj,
+to rozdzielenie na dwie
 
 75
 00:03:31,760 --> 00:03:35,410
-separate zombies table.
+osobne tabele z zombie.
 
 76
 00:03:35,410 --> 00:03:38,820
-But now we obviously need a
-way to map which zombies
+Oczywiście potrzebujemy teraz
+sposobu aby powiązać zombie
 
 77
 00:03:38,820 --> 00:03:41,040
-tweeted what.
+z tweetem.
 
 78
 00:03:41,040 --> 00:03:44,820
-The Rails way of making the
-association is to add a zombie
+Rails tworzy związek ('association')
+poprzez dodanie kolumny
 
 79
 00:03:44,820 --> 00:03:48,560
-underscore ID column to
-the tweets table.
+'zombie pokreślnik ID'
+do tabeli tweets.
 
 80
 00:03:48,560 --> 00:03:52,030
-We then specify the ID of the
-zombie that made the tweet,
+Określamy wtedy ID zombie, który
+stworzył danego tweeta,
 
 81
 00:03:52,030 --> 00:03:55,810
-and we can then map the
-tweet to the zombie.
+przez co możemy powiązać
+tweeta z zombie.
 
 82
 00:03:55,810 --> 00:03:58,720
-So now if we add a tweet, one
-that maybe says your eyelids
+Jeśli dodamy teraz tweeta, może
+tego co mówi 'Twoje powieki
 
 83
 00:03:58,720 --> 00:04:02,440
-taste like bacon, we can specify
-which zombie that
+smakuja jak bekon', możemy określić
+który zombie
 
 84
 00:04:02,440 --> 00:04:04,660
-belongs to.
+należy do niego.
 
 85
 00:04:04,660 --> 00:04:07,550
-So looking at this database
-table, we might say a tweet
+Patrząc więc na tabele z bazy 
+danych, możemy powiedzieć,
 
 86
 00:04:07,550 --> 00:04:10,770
-belongs to a zombie.
+że tweet należy do zombie.
 
 87
 00:04:10,770 --> 00:04:14,760
-Inside of our model, to map that
-correctly, we simply add
+W naszym modelu, aby stworzyć
+powiązanie, po prostu dodajemy
 
 88
 00:04:14,760 --> 00:04:17,769
@@ -420,128 +419,124 @@ belongs_to :zombie.
 
 89
 00:04:17,769 --> 00:04:19,310
-It's important to notice
-here that we're
+Ważne jest aby zauwazyć, że
+używamy 'zombie'
 
 90
 00:04:19,310 --> 00:04:20,980
-using zombie singular.
+w liczbie pojedyńczej.
 
 91
 00:04:20,980 --> 00:04:25,600
-We say belongs_to :zombie because
-one tweet belongs to
+Mówimy belongs_to :zombie, ponieważ
+jeden tweet należy do
 
 92
 00:04:25,600 --> 00:04:27,380
-one zombie.
+jednego zombie.
 
 93
 00:04:27,380 --> 00:04:30,110
-So now we've mapped the
-relationship in one direction.
+Stworzyliśmy właśnie relację 
+w jedną stronę.
 
 94
 00:04:30,110 --> 00:04:34,080
-How do we map it in the other
-direction and basically say a
+Jak stworzyć relację w drugą 
+stronę i po prostu powiedzieć,
 
 95
 00:04:34,080 --> 00:04:38,810
-zombie has many tweets?
+że zombie ma wiele tweetów?
 
 96
 00:04:38,810 --> 00:04:41,470
-Well, if you take a look at the
-model here, to map that,
+Jeśli spojrzysz na ten model, 
+to aby powiązać je, starczy
 
 97
 00:04:41,470 --> 00:04:45,570
-we simply write
+napisać
 has_many :tweets.
 
 98
 00:04:45,570 --> 00:04:47,880
-So now that we have the mapping
-correct for each of
+Mamy teraz poprawne powiązanie
+u każdego z tych 
 
-99
-00:04:47,880 --> 00:04:49,870
-these models, let's
-start playing
-
-100
-00:04:49,870 --> 00:04:51,210
-with them on the console.
+99/100
+00:04:47,880 --> 00:04:51,210
+modeli, więc czas się nimi 
+pobawić w konsoli Rails.
 
 101
 00:04:51,210 --> 00:04:55,000
-So we're going to fetch a
-zombie, then to create a tweet
+Zamierzamy teraz pobrać zombie,
+następnie stworzyć tweeta
 
 102
 00:04:55,000 --> 00:04:59,013
-for that zombie, we're going to
-call Tweet.create, send
+dla tego zombie przez wywołanie
+Tweet.create, wypełnienić
 
 103
 00:04:59,013 --> 00:05:03,180
-in a status, and specify
-the zombie.
+status oraz określić
+zombie.
 
 104
 00:05:03,180 --> 00:05:06,550
-You'll notice in this second
-line the tweet gets saved and
+Zauważysz, że w drugiej linii
+tweet zostaje zapisany i
 
 105
 00:05:06,550 --> 00:05:08,250
-gets stored in the t variable.
+przechowany w zmiennej 't'.
 
 106
 00:05:08,250 --> 00:05:12,580
-We can then call t.zombie to
-get back the zombie object
+Możemy wywołać t.zombie aby
+otrzymać powiązany obiekt zombie
 
 107
 00:05:12,580 --> 00:05:16,430
-for that tweet, and call
-t.zombie.name to print out
+z tym tweetem, jak i t.zombie.name
+aby otrzymać imię
 
 108
 00:05:16,430 --> 00:05:20,660
-the zombie that made that tweet,
-in this case, Bob.
+zombie, który stworzył tego tweeta.
+W tym wypadku - Bob.
 
 109
 00:05:20,660 --> 00:05:23,640
-To explore the other side of
-the relationship, we can go
+Aby odkryć jak działa druga
+strona relacji, możemy wybrać
 
 110
 00:05:23,640 --> 00:05:24,980
-and get a specific zombie.
+określnego zombie.
 
 111
 00:05:27,480 --> 00:05:30,070
-We can count the number of
-tweets on that zombie, and if
+Możemy policzyć liczbę tweetów
+na tym zombie a jeśli wywołamy
 
 112
 00:05:30,070 --> 00:05:34,540
-we just call ash.tweets, we
-get back an array with all
+ash.tweets, otrzymamy z powrotem
+tablice (array) ze wszystkimi
 
 113
 00:05:34,540 --> 00:05:37,090
-of the tweets that that
-zombie has done.
+tweetami jakie stworzył
+dany zombie.
 
 114
 00:05:37,090 --> 00:05:39,950
-Now it's time to get back into
-the code with Zombie Lab
+Nadszedł czas aby wrócić do
+kodowania wraz z Zobmie Lab
 
 115
 00:05:39,950 --> 00:05:41,200
-Number 2.
+numer 2.
