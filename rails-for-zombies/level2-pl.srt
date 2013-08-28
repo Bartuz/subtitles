@@ -108,7 +108,7 @@ w bazę danych po tabelę
 
 23
 00:01:02,440 --> 00:01:06,730
-tweets w liczbie mnogiej),
+tweets (w liczbie mnogiej!),
 dokładnie jak tutaj.
 
 24
@@ -175,7 +175,7 @@ danych, co jest złe.
 37
 00:01:42,520 --> 00:01:47,340
 Oczywiście potrzebujemy sposobu
-aby weryfikowac nasz model.
+aby weryfikować nasz model.
 
 38
 00:01:47,340 --> 00:01:50,530
@@ -273,7 +273,7 @@ weryfikacji.
 
 58
 00:02:41,710 --> 00:02:44,780
-Zamiast wykonywania je pojedyńczo,
+Zamiast wykonywania ich pojedyńczo,
 możemy napisać
 
 59
@@ -289,7 +289,7 @@ weryfikator.
 61
 00:02:52,850 --> 00:02:57,730
 Możemy też uzyć validates :status,
-:length => { :minimum => 3 }
+:length => { :minimum => 3  
 
 62
 00:02:57,730 --> 00:03:00,290
@@ -350,7 +350,7 @@ wydajne.
 74
 00:03:29,140 --> 00:03:31,760
 To co zamierzamy zrobić tutaj,
-to rozdzielenie na dwie
+to rozdzielenie ich na dwie
 
 75
 00:03:31,760 --> 00:03:35,410
@@ -392,7 +392,7 @@ tego co mówi 'Twoje powieki
 
 83
 00:03:58,720 --> 00:04:02,440
-smakuja jak bekon', możemy określić
+smakuja jak bekon', możemy określić,
 który zombie
 
 84
@@ -420,11 +420,11 @@ belongs_to :zombie.
 89
 00:04:17,769 --> 00:04:19,310
 Ważne jest aby zauwazyć, że
-używamy 'zombie'
+używamy
 
 90
 00:04:19,310 --> 00:04:20,980
-w liczbie pojedyńczej.
+'zombie' w liczbie pojedyńczej.
 
 91
 00:04:20,980 --> 00:04:25,600
