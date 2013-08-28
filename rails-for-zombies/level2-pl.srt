@@ -540,3 +540,8 @@ kodowania wraz z Zobmie Lab
 115
 00:05:39,950 --> 00:05:41,200
 numer 2.
+
+Translation Credits
+00:05:41,200 --> 00:05:45,000
+Tłumaczenie: Filip.Bartuzi.me
+Korekta: Krzysztof Kanabaj
