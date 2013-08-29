@@ -5,111 +5,109 @@ i Wy oglądacie Rails for Zombies
 
 2
 00:00:02,830 --> 00:00:04,322
-Episode Three.
+Epizod Trzeci.
 
 3
 00:00:04,322 --> 00:00:18,830
-[GRA MUZYKAs]
+[GRA MUZYKA]
 
 4
 00:00:18,830 --> 00:00:21,010
-In this episode, we're going to
-be learning about the view,
+W tym rozdziale, zamierzamy 
+uczyć się o wyglądzie ('view'),
 
 5
 00:00:21,010 --> 00:00:23,150
-which isn't always so pretty,
-especially when
+który nie zawsze jest piękny,
+zwłaszcza gdy
 
 6
 00:00:23,150 --> 00:00:26,200
-you're eating brains.
+zajadamy mózgi.
 
 7
 00:00:26,200 --> 00:00:28,780
-Now when a web request comes to
-our Rails stack, it's going
+Kiedy zapytanie webowe dochodzi
+do Rails, to zamierza przejść //do korekty
 
 8
 00:00:28,780 --> 00:00:32,080
-to be going through four
-different components.
+przez 4 różne komponenty.
 
 9
 00:00:32,080 --> 00:00:34,380
-We've already talked about the
-component on the bottom, which
+Rozmawialiśmy już o komponentach
+z dołu, którymi są
 
 10
 00:00:34,380 --> 00:00:35,960
-are the models.
+modele.
 
 11
 00:00:35,960 --> 00:00:38,390
-But now, we're going to be
-talking about the view, which
+Tym razem, zamierzamy rozmawiać
+o wyglądzie ('view'), który
 
 12
 00:00:38,390 --> 00:00:41,280
-is right about there.
+jest zaraz obok.
 
 13
 00:00:41,280 --> 00:00:43,560
-Let's take a look at the
-directory structure of our
+Spójrzmy teraz na strukture
+katalogów dla, naszej
 
 14
 00:00:43,560 --> 00:00:45,480
-Twitter for Zombies
-application--
+aplikacji,
+Twitter dla Zombie.
 
 15
 00:00:45,480 --> 00:00:47,060
-might look a little
-bit like this.
+Może przypominać
+coś takiego.
 
 16
 00:00:47,060 --> 00:00:48,920
-You can see we have
-an app directory.
+Jak widzicie, mamy
+katalog 'app' ('aplikacja').
 
 17
 00:00:48,920 --> 00:00:50,940
-Inside that we have views.
+W środku mamy 'view' ('wygląd').
 
 18
 00:00:50,940 --> 00:00:52,660
-Inside that we have the
-zombie directory
+Znajdziemy tam katalog zombie
+jak i
 
 19
 00:00:52,660 --> 00:00:54,380
-and a tweets directory.
+katalog tweetów
 
 20
 00:00:54,380 --> 00:00:58,450
-Inside the tweets directory, we
-have an index.html.erb, and
+W środku katalogu tweetów, mamy
+index.html.erb oraz
 
 21
 00:00:58,450 --> 00:01:02,510
-a show.html.erb, one which shows
-all the tweets and one
+show.html.erb, jeden pokazuje
+wszystkie tweety i drugi
 
 22
 00:01:02,510 --> 00:01:05,290
-which shows a particular
-tweet.
+który pokazuje poszczególne
+tweety.
 
 23
 00:01:05,290 --> 00:01:08,830
-The file extension here
-is .html.erb.
+Rozszerzenie pliku tutaj
+to .html.erb.
 
 24
 00:01:08,830 --> 00:01:11,190
-erb, I know what you're
-thinking, it stands for Edible
+
 
 25
 00:01:11,190 --> 00:01:12,720
