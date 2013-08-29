@@ -5,7 +5,7 @@ i Wy oglądacie Rails for Zombies
 
 2
 00:00:03,030 --> 00:00:04,790
-Epizod drugi.
+Epizod Drugi.
 
 3
 00:00:04,790 --> 00:00:04,930
